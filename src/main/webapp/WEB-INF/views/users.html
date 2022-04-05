@@ -7,10 +7,15 @@
 <body>
 
 <div>
-    <h3>Users</h3>
 
-    <table border="1" >
+    <table border="1">
+        <caption>
+            <h3>Users</h3>
+        </caption>
         <tr>
+            <colgroup>
+                <col span="5" style="background-color: red">
+            </colgroup>
             <th>Id</th>
             <th>Name</th>
             <th>LastName</th>
@@ -35,7 +40,9 @@
         </tr>
     </table>
     <br>
-    <a href="/new">New user</a>
+    <form method="get" action="/new">
+        <button type="submit">ADD USER</button>
+    </form>
 </div>
 
 </body>
